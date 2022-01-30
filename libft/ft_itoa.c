@@ -18,7 +18,7 @@ static	int	numlen(int n)
 
 	len = 0;
 	if (n <= 0)
-		len++;
+		len = 1;
 	while (n != 0)
 	{
 		n /= 10;
@@ -40,7 +40,7 @@ char	*ft_itoa(int n)
 	if (n < 0)
 		str[0] = '-';
 	else if (n == 0)
-		str[a - 1] = '0';
+		str[0] = '0';
 	while (n != 0)
 	{
 		if (n < 0)
